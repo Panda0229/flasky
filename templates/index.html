@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+</head>
+<body>
+    <p>name = {{ name }}</p>
+    <p>age = {{ age }}</p>
+    <p>my_dict: city = {{ my_dict["city"] }}</p>
+    <p>my_dict: city = {{ my_dict.city }}</p>
+    <p>my_list[my_int]: {{ my_list[my_int] }}</p>
+    <!--加法操作-->
+    <p>my_list[0] + my_list[1] = {{ my_list[0] + my_list[1] }}</p>
+    <p>{{ "python" + " hello" }}</p>
+    <!--过滤器-->
+    <p>a{{ "  hello flask  " | trim | upper }}a</p>
+    <!--自定义过滤器-->
+    <p>{{ my_list | li2 }}</p>
+    <p>{{ my_list | li3 }}</p>
+</body>
+</html>
+
